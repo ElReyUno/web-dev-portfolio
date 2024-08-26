@@ -1,0 +1,257 @@
+body {
+  background-color: #3F2860;
+  color: #40407A;
+  font-family: Verdana, Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #40407A;
+  background-image: url("img/sunrise.jpg");
+  background-size: 100%;
+  color: #FFFFFF;
+  font-size: 90%;
+  margin-top: 50px;
+  min-height: 200px;
+}
+
+header a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+header a:visited {
+  text-decoration: none;
+  color: #FFF;
+}
+
+header a:hover {
+  color: #EDF5F5;
+}
+
+nav {
+  padding: 1em;
+  background-color: inherit;
+  width: 100%;
+  padding-top: 0.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: right;
+  background-color: #FFF;
+  margin: 0;
+  padding-right: 0;
+  z-index: 9999;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+}
+
+nav a:link {
+  color: #3F2860;
+}
+
+nav a:visited {
+  color: #497777;
+}
+
+nav a:hover {
+  color: #A26100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+nav li {
+  width: 40%;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: inline;
+}
+
+footer {
+  font-size: 0.60em;
+  font-style: italic;
+  text-align: center;
+}
+
+section {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+#wrapper {
+  background-color: #F5F5F5;
+  padding: 2em;
+}
+
+#mathero {
+  background-image: url("img/yogamat.jpg");
+  background-repeat: no-repeat;
+  height: 300px;
+  background-size: cover;
+  display: none;
+}
+
+#loungehero {
+  background-image: url("img/yogalounge.jpg");
+  background-repeat: no-repeat;
+  height: 300px;
+  background-size: cover;
+  display: none;
+}
+
+#mobile {
+  display: inline;
+  color: #A26100;
+  text-decoration: none;
+}
+
+#desktop {
+  display: none;
+}
+
+.studio {
+  font-style: italic;
+}
+
+.home,
+.content {
+  height: 20vh;
+  padding-top: 2em;
+  padding-left: 10%;
+}
+
+.telephone {
+  color: #A26100;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+table {
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid #3F2860;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+td,
+th {
+  padding: 5px;
+  border: 1px solid #3F2860;
+}
+
+tr:nth-of-type(even) {
+  background-color: #DBE8E9;
+}
+
+caption {
+  margin: 1em 0;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding-left: 1em;
+}
+
+input, textarea {
+  margin-bottom: 0.5em;
+}
+
+@media (min-width: 600px) {
+  nav {
+    text-align: left;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+
+  nav li {
+    width: 7em;
+  }
+
+  section {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  #mathero,
+  #loungehero {
+    display: block;
+    padding-bottom: 1em;
+  }
+
+  #flow {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+  #desktop {
+    display: inline;
+  }
+
+  form {
+    display: grid; /* Make form a grid container */
+    grid-template-columns: 12em 1fr; /* Two columns: 12em fixed width and 1fr remaining width */
+    grid-gap: 1em; /* Add 1em space between grid items */
+    width: 60%; /* Set width to 60% */
+  }
+
+  /* Style for the submit button */
+  input[type="submit"] {
+    grid-column: 2; /* Place button in the second column */
+    width: 9em; /* Set button width */
+  }
+
+  /* Right-align labels */
+  label {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    font-size: 120%;
+  }
+
+  .home {
+    height: 50vh;
+    padding-top: 5em;
+    padding-left: 8em;
+  }
+
+  .content {
+    height: 30vh;
+    padding-top: 1em;
+    padding-left: 8em;
+  }
+
+  #wrapper {
+    margin: 0 auto;
+    width: 80%;
+  }
+}

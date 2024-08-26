@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Path of Light Yoga Studio :: Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="yoga.css">
+</head>
+
+<body>
+  <header class="content">
+    <a href="contact.html">
+      <h1>Path of Light Yoga Studio - Contact</h1>
+    </a>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div id="wrapper">
+    <main>
+      <h2>Contact Path of Light Yoga Studio</h2>
+      <p>Fill out the form below to contact Path of Light Yoga Studio. All information is required.</p>
+      <form method="post" action="https://webdevbasics.net/scripts/yoga.php">
+        <label for="myName">Name:</label>
+        <input type="text" id="myName" name="myName" required>
+        <label for="myEmail">E-mail:</label>
+        <input type="text" id="myEmail" name="myEmail" required>
+        <label for="myRefer">How did you hear about us?</label>
+        <input type="text" id="myRefer" name="myRefer" list="referral" required>
+        <datalist id="referral">
+          <option value="Google">Google</option>
+          <option value="Bing">Bing</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Friend">Friend</option>
+          <option value="Radio Ad">Radio Ad</option>
+        </datalist> 
+        <label for="myComments">Comments:</label>
+        <textarea id="myComments" name="myComments" rows="2" cols="20" required></textarea>
+        <input type="submit" id="mySubmit" value="Send Now">
+      </form>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2020 Path of Light Yoga Studio</p>
+      <p><a href="mailto:sid.email@example.com">SMITTY</a></p>
+    </footer>
+  </div>
+</body>
+
+</html>
