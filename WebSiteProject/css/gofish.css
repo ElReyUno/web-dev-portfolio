@@ -1,0 +1,557 @@
+body {
+       background-color: #FFFFE0;
+       color: #40407A;
+       font-family: Verdana, Arial, sans-serif;
+       margin: 0;
+}
+
+button.ocean-green {
+       padding: 10px 20px;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+       transition: background-color 0.3s ease;
+}
+
+button.ocean-green:hover {
+       background-color: #006464;
+}
+
+.button-container.sticky {
+       position: fixed;
+       top: 60px;
+       left: 50%;
+       transform: translateX(-50%);
+       z-index: 9998;
+   }
+
+     .sticky-menu,
+.sticky-blog {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sticky-menu.sticky, 
+.sticky-blog.sticky {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9998;
+}
+
+.sticky-menu.sticky {
+       top: 60px; 
+     }
+     
+     .sticky-blog.sticky {
+       top: 100px; 
+     }
+
+.cta {
+       display: inline-block;
+       padding: 15px 30px;
+       background-color: #008080;
+       color: white;
+       text-decoration: none;
+       border-radius: 5px;
+       transition: background-color 0.3s ease;
+       font-weight: bold;
+       margin: 0 10px;
+}
+
+.cta:hover {
+       background-color: #006464;
+}
+
+#blog-buttons {
+       display: flex;
+       justify-content: center;
+     }
+     
+     #blog-buttons.show {
+       display: flex;
+     }
+
+header {
+       background-color: #000080;
+       color: #FFFFE0;
+       background-size: 100%;
+       font-size: 90%;
+       margin-top: 50px;
+       min-height: 200px;
+}
+
+header a {
+       text-decoration: none;
+       color: #FFF;
+}
+
+header a:visited {
+       text-decoration: none;
+       color: #FFF;
+}
+
+header a:hover {
+       color: #EDF5F5;
+}
+
+h1,
+h2 {
+       font-family: 'Lobster Two', cursive;
+       font-weight: bold;
+       text-align: center;
+}
+
+h3,
+h4 {
+       font-family: 'Roboto Slab', serif;
+       font-weight: 500;
+}
+
+h1 {
+       font-size: 48px;
+}
+
+h2 {
+       font-size: 36px;
+}
+
+h3,
+h4 {
+       font-size: 24px;
+}
+
+body,
+footer {
+       font-family: 'Lato', sans-serif;
+       font-weight: normal;
+       font-size: 16px;
+}
+
+footer {
+       font-size: 14px;
+}
+
+nav {
+       padding: 1em;
+       background-color: inherit;
+       padding-top: 0.5em;
+       position: fixed;
+       top: 0;
+       left: 0;
+       background-color: #FFF;
+       padding-right: 0;
+       z-index: 9999;
+       display: flex;
+       justify-content: center;
+}
+
+nav ul {
+       list-style: none;
+       flex-wrap: wrap;
+       font-size: 1.2em;
+       justify-content: space-between;
+
+}
+
+nav ul.open {
+       display: flex;
+       flex-direction: column;
+}
+
+nav a {
+       text-decoration: none;
+       display: block;
+}
+
+nav a:link {
+       color: #3F2860;
+}
+
+nav a:visited {
+       color: #497777;
+}
+
+nav a:hover {
+       color: #A26100;
+       padding-top: 0.5em;
+       padding-bottom: 0.5em;
+}
+
+nav ul li {
+       min-width: 8em;
+       padding-left: 1em;
+       padding-right: 1em;
+}
+
+#toggleMenu {
+       display: block;
+       background-color: #4CAF50;
+       border: none;
+       color: white;
+       padding: 10px 20px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       cursor: pointer;
+}
+
+footer {
+       background-color: #000080;
+       color: #FFFFE0;
+       font-size: 0.60em;
+       font-style: italic;
+       text-align: center;
+}
+
+section {
+       padding-left: 0.5em;
+       padding-right: 0.5em;
+}
+
+#wrapper {
+       background-color: #F5F5F5;
+       padding: 2em;
+       width: 100%;
+}
+
+#surf {
+       background-image: url("img/yogamat.jpg");
+       background-repeat: no-repeat;
+       height: 300px;
+       background-size: cover;
+       display: none;
+}
+
+#turf {
+       background-image: url("../images/turf.jpg");
+       background-repeat: no-repeat;
+       height: 300px;
+       background-size: cover;
+       display: none;
+}
+
+#wetters {
+       background-image: url("../images/wetters.jpg");
+       background-repeat: no-repeat;
+       height: 300px;
+       background-size: cover;
+       display: none;
+}
+
+#mobile {
+       display: inline;
+       color: #A26100;
+       text-decoration: none;
+}
+
+#desktop {
+       display: none;
+}
+
+.studio {
+       font-style: italic;
+}
+
+.home,
+.content {
+       height: 20vh;
+       padding-top: 2em;
+       padding-left: 10%;
+}
+
+.telephone {
+       color: #A26100;
+       text-decoration: none;
+}
+
+* {
+       box-sizing: border-box;
+}
+
+table {
+       width: 60%;
+       margin: 0 auto;
+       border: 1px solid #3F2860;
+       border-collapse: collapse;
+       margin-bottom: 1em;
+}
+
+td,
+th {
+       padding: 5px;
+       border: 1px solid #3F2860;
+}
+
+tr:nth-of-type(even) {
+       background-color: #DBE8E9;
+}
+
+caption {
+       margin: 1em 0;
+       font-weight: bold;
+       font-size: 120%;
+}
+
+form {
+       display: flex;
+       flex-direction: column;
+       width: 80%;
+       padding-left: 1em;
+}
+
+input,
+textarea {
+       margin-bottom: 0.5em;
+}
+
+.blog-post {
+       margin-bottom: 20px;
+       border: 1px solid #ccc;
+       padding: 15px;
+}
+
+.dropdown {
+       position: absolute;
+       background-color: #f9f9f9;
+       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+       z-index: 1;
+       transition: opacity 0.3s ease;
+       display: none;
+}
+
+li:hover .dropdown {
+       display: block;
+       opacity: 1;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.menu-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.menu-section > div {
+  flex: 1;
+  padding: 10px;
+}
+
+.button-container {
+       display: flex;
+       justify-content: center;
+       margin-top: 20px;
+   }
+
+/* Styles for large screens (TVs, desktops) */
+@media (min-width: 1024px) {
+       nav {
+              width: 100%;
+       }
+
+       nav ul {
+              display: flex;
+              width: 100%;
+       }
+
+       #toggleMenu {
+              display: none;
+       }
+
+       #toggle-blog-buttons {
+              display: none;
+       }
+
+       .main-content {
+              width: 100%;
+       }
+
+       .home {
+              height: 50vh;
+              padding-top: 5em;
+              padding-left: 8em;
+       }
+
+       .content {
+              height: 30vh;
+              padding-top: 1em;
+              padding-left: 8em;
+       }
+
+       #gofish {
+              margin: 0 auto;
+              width: 80%;
+       }
+}
+
+/* Styles for medium screens (laptops, tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+       nav {
+              width: 100%;
+       }
+       nav ul {
+              display: flex;
+              width: 100%;
+       }
+
+       #toggleMenu {
+              display: none;
+       }
+
+       #blog-buttons {
+              display: none;
+            }
+            
+            #blog-buttons.show {
+              display: flex;
+            }
+          
+            #toggle-blog-buttons {
+              width: 100%; 
+              padding: 10px; 
+              text-align: center; 
+              background-color: #ff5722; 
+              color: white; 
+              border: none; 
+              border-radius: 5px; 
+              cursor: pointer;
+              margin-left: 10px;
+            }
+
+       .main-content {
+              width: 100%;
+       }
+
+       .sidebar {
+              width: 100%;
+              margin-top: 20px;
+       }
+
+       h1 {
+              font-size: 32px;
+       }
+
+       h2 {
+              font-size: 28px;
+       }
+
+       h3 {
+              font-size: 20px;
+       }
+
+       h4 {
+              font-size: 17;
+       }
+
+       body,
+       footer {
+              font-size: 13px;
+       }
+
+       footer {
+              font-size: 12px;
+       }
+}
+
+/* Styles for small screens (phones) */
+@media (max-width: 767px) {
+       #toggleMenu {
+              display: block;
+       }
+
+       #blog-buttons {
+              display: none;
+            }
+            
+            #blog-buttons.show {
+              display: flex;
+            }
+
+       #toggle-blog-buttons {
+              /* Style the toggle button */
+              width: 100%; 
+              padding: 10px; 
+              text-align: center; 
+              background-color: #ff5722; 
+              color: white; 
+              border: none; 
+              border-radius: 5px; 
+              cursor: pointer;
+              margin-left: 10px;
+            }
+
+       nav {
+              text-align: center;
+       }
+
+       nav ul {
+              justify-content: space-between;
+              display: none;
+       }
+
+       nav li {
+              width: 7em;
+       }
+
+       section {
+              padding-left: 2em;
+              padding-right: 2em;
+       }
+
+       #surf-section,
+       #turf-section,
+       #whistlewetters-section {
+              display: block;
+              padding-bottom: 1em;
+       }
+
+       #flow {
+              display: flex;
+              flex-direction: row;
+       }
+
+       #mobile {
+              display: none;
+       }
+
+       #desktop {
+              display: inline;
+       }
+
+       form {
+              display: grid;
+              grid-template-columns: 12em 1fr;
+              grid-gap: 1em;
+              width: 60%;
+       }
+
+       input[type="submit"] {
+              grid-column: 2;
+              width: 9em;
+       }
+
+       label {
+              text-align: right;
+       }
+
+       .menu-section {
+              display: block; /* Stack elements vertically */
+              justify-content: initial; /* Reset justify-content */
+              flex-direction: column; /* Order elements vertically */
+          }
+      
+          .menu-section > div {
+              flex: initial; /* Reset flex property */
+          }
+
+          .menu-container {
+              padding: 10px; /* Add padding to the container */
+          }
+}
+
+/* Styles for extra small screens (very small phones) */
+@media (max-width: 480px) {}

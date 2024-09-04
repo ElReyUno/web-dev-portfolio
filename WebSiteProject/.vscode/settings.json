@@ -1,0 +1,11 @@
+{
+   "eslint.validate": [ 
+      "javascript", 
+      "javascriptreact", 
+      "typescript", 
+      "typescriptreact" ],
+      "eslint.enable": true,
+      "stylelint.validate": [ "**/*.css", "**/*.scss", "**/*.sass"],
+      //"htmlhint.validate": [ "**/*.html" ]
+      "files.eol": "\n"
+}

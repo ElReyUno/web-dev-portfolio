@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Go Fish - Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lobster+Two&family=Roboto+Slab:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/gofish.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Go Fish</h1>
+    </header>
+
+    <nav>
+      <button id="toggleMenu">Menu</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="#">Products</a>
+          <ul class="dropdown">
+            <li><a href="./products/menu.html">Menu</a></li>
+            <li><a href="./products/swag.html">Swag</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>This is the Contact Page </h2>
+      <p>Fill out the form below to contact Go Fish. All information is required.</p>
+      <form method="post" action="https://webdevbasics.net/scripts/yoga.php">
+        <label for="myName">Name:</label>
+        <input type="text" id="myName" name="myName" required>
+        <label for="myEmail">E-mail:</label>
+        <input type="text" id="myEmail" name="myEmail" required>
+        <label for="myRefer">How did you hear about us?</label>
+        <input type="text" id="myRefer" name="myRefer" list="referral" required>
+        <datalist id="referral">
+          <option value="Google">Google</option>
+          <option value="Bing">Bing</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Friend">Friend</option>
+          <option value="Radio Ad">Radio Ad</option>
+        </datalist>
+        <label for="myComments">Comments:</label>
+        <textarea id="myComments" name="myComments" rows="2" cols="20" required></textarea>
+        <input type="submit" id="mySubmit" value="Send Now">
+      </form>
+    </main>
+    <footer>
+      Copyright &copy; 2083 EL REY UNO
+      <p><a href="mailto:sid.email@example.com">SMITTY</a></p>
+    </footer>
+  </div>
+
+  <script src="./js/gofish.js" defer></script>
+</body>
+
+</html>

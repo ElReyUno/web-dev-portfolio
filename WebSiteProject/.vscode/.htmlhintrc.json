@@ -1,0 +1,6 @@
+{
+  "extends": "htmlhint:recommended",
+  "rules": {
+    "attr-empty-style": true
+  }
+}
